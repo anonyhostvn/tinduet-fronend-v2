@@ -16,7 +16,7 @@ function CryptoNewsItem({data}) {
             </p>
           </div>
           <div className="gx-news-tags-right">
-            <p className="gx-text-primary gx-pointer gx-mb-0">Ready Full Story
+            <p className="gx-text-primary gx-pointer gx-mb-0"> See movie
               <i className={`icon icon-long-arrow-right gx-fs-xl gx-ml-2 gx-d-inline-flex gx-vertical-align-middle`}/>
             </p>
           </div>

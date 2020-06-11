@@ -1,6 +1,6 @@
 import React from "react";
-import Widget from "components/Widget";
-import {contactList} from '../../../routes/socialApps/Profile/data'
+import Widget from "../../../components/Widget";
+import {contactList} from '../../../routes/ProfileManage/data'
 
 const Contact = () => {
   return (

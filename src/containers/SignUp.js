@@ -74,10 +74,10 @@ class SignUp extends React.Component {
             <div className="gx-app-login-content">
               <Form onSubmit={this.handleSubmit} className="gx-signup-form gx-form-row0">
                 <FormItem>
-                  {getFieldDecorator('userName', {
-                    rules: [{required: true, message: 'Please input your username!'}],
+                  {getFieldDecorator('name', {
+                    rules: [{required: true, message: 'Please input your name!'}],
                   })(
-                    <Input placeholder="Username"/>
+                    <Input placeholder="Name"/>
                   )}
                 </FormItem>
 
