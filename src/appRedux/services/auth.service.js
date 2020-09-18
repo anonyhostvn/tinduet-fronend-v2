@@ -1,6 +1,6 @@
 import Axios from 'axios';
-import {urlBackend} from "../constant/url.constant";
+import {contextExternal, urlBackend} from "../constant/url.constant";
 
-export const requestSignInWithEmailPassword = (email, password) => Axios.post(`${urlBackend}/login`, {username: email, password}, {});
+export const requestSignInWithEmailPassword = (email, password) => Axios.post(`${urlBackend}${contextExternal}/user/login`, {email, password}, {});
 
-export const requestSignUpWithEmailPassword = (email, password, name) => Axios.post(`${urlBackend}/register`, {username: email, password, name}, {});
+export const requestSignUpWithEmailPassword = (email, password, phoneNumber) => Axios.post(`${urlBackend}${contextExternal}/user/register`, {email, password, phoneNumber}, {});

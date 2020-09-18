@@ -62,9 +62,9 @@ const signInUserWithTwitterRequest = async () =>
     .catch(error => error);
 
 function* createUserWithEmailPassword({payload}) {
-  const {email, password, name} = payload;
+  const {email, password, phoneNumber} = payload;
   try {
-    const signUpUser = yield call(requestSignUpWithEmailPassword, email, password, name);
+    const signUpUser = yield call(requestSignUpWithEmailPassword, email, password, phoneNumber);
     if (signUpUser.status === 200) {
       // localStorage.setItem('user_id', signUpUser.data.uid);
       yield put(userSignUpSuccess(signUpUser.data.uid));
@@ -146,11 +146,12 @@ function* signInUserWithEmailPassword({payload}) {
   try {
     const signInUser = yield call(requestSignInWithEmailPassword, email, password);
     if (signInUser.status === 200) {
-      localStorage.setItem('user_id', signInUser.data.uid);
-      localStorage.setItem('name' , signInUser.data.name);
-      localStorage.setItem('avatar', signInUser.data.avatar);
-      localStorage.setItem('email', signInUser.data.username);
-      yield put(userSignInSuccess(signInUser.data.uid));
+      console.log(signInUser);
+      localStorage.setItem('user_id', signInUser.data.data.userId);
+      localStorage.setItem('name' , signInUser.data.data.profile.name);
+      localStorage.setItem('email', signInUser.data.data.profile.email);
+
+      yield put(userSignInSuccess(signInUser.data.data.userId));
     } else {
       yield put(showAuthMessage(signInUser.message));
     }

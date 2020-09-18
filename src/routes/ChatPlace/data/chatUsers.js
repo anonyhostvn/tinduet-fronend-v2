@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    name: 'Alex Dolgove',
+    name: 'Nguyễn Huỳnh Diệu Linh',
     thumb: 'https://via.placeholder.com/150x150',
     status: 'away',
     mood: 'English versions from the 1914 translation by H. Rackham',
@@ -11,7 +11,7 @@ export default [
     recent: false
   }, {
     id: 2,
-    name: 'Domnic Brown',
+    name: 'Nguyễn Tố Anh',
     thumb: 'https://via.placeholder.com/150x150',
     status: 'online',
     mood: 'English versions from the 1914 translation by H. Rackham',
@@ -21,7 +21,7 @@ export default [
     recent: true
   }, {
     id: 3,
-    name: 'Domnic Harris',
+    name: 'Nguyễn Thị Thùy Trang',
     thumb: 'https://via.placeholder.com/150x150',
     status: 'offline',
     mood: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem',
@@ -31,7 +31,7 @@ export default [
     recent: false
   }, {
     id: 4,
-    name: 'Garry Sobars',
+    name: 'Nguyễn Thảo Chi',
     thumb: 'https://via.placeholder.com/150x150',
     status: 'away',
     mood: 'It is a long established fact',
@@ -41,7 +41,7 @@ export default [
     recent: true
   }, {
     id: 5,
-    name: 'Jeson Born',
+    name: 'Lít Chy',
     thumb: 'https://via.placeholder.com/150x150',
     status: 'away',
     mood: 'I must explain to you how all this mistaken idea of denouncing ',
@@ -61,7 +61,7 @@ export default [
     recent: false
   }, {
     id: 7,
-    name: 'John Smith',
+    name: 'Nguyễn Song Quỳnh',
     thumb: 'https://via.placeholder.com/150x150',
     status: 'away',
     mood: 'There are many variations of passages of ',
